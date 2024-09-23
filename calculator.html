@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="calculator.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="calculater">
+                <form>
+                    <div class="display">
+                        <input type="text" name="ds">
+
+                    </div>
+                    <div>
+                        <input type="button" value="AC" onclick="ds.value =' ' " class="color">                                  
+                        <input type="button" value="CL" onclick="ds.value=ds.value.toString().slice(0,-1) " class="color"> <!--delect or extract a part in new string here -1 means last element negative indicates i.e end .tostring means its return itself-->
+                        <input type="button" value="+" onclick="ds.value+='+' " class="color"> 
+                        <input type="button" value="%" onclick="ds.value+='%' " class="color">
+                        
+                    </div>
+                    <div>
+                        <input type="button" value="7" onclick="ds.value+='7' ">
+                        <input type="button" value="8" onclick="ds.value+='8' ">
+                        <input type="button" value="9" onclick="ds.value+='9' ">
+                        <input type="button" value="*" onclick="ds.value+='*' " class="color">
+                        
+                    </div>
+                    <div>
+                        <input type="button" value="4" onclick="ds.value+='4' ">
+                        <input type="button" value="5" onclick="ds.value+='5' ">
+                        <input type="button" value="6" onclick="ds.value+='6' ">
+                        <input type="button" value="/" onclick="ds.value+='/' " class="color">
+                        
+                    </div>
+                    <div>
+                        <input type="button" value="1" onclick="ds.value+='1' ">
+                        <input type="button" value="2" onclick="ds.value+='2' ">
+                        <input type="button" value="3" onclick="ds.value+='3' ">
+                        <input type="button" value="-" onclick="ds.value+='-' " class="color">
+                        
+                    </div>
+                    <div>
+                        <input type="button" value="." onclick="ds.value+='.' ">
+                        <input type="button" value="00" onclick="ds.value+='0' ">
+                        <input type="button" value="="  onclick="ds.value = eval(ds.value)" class="equal color"> <!--evalutes or executes an argument-->
+                        
+                        
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </body>
+</html>
