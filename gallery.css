@@ -1,0 +1,72 @@
+.container
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    padding: 30px 8px;
+    background-color: bisque;
+}
+.img-gallery
+{
+    /* width: 10%; */
+     margin: 20px  10px; 
+    /* display: flex;
+     grid-template-columns: repeat(auto-fit,minmax(200px,lfr)); 
+    grid-gap: 20px; */
+
+}
+/*.gallery
+{
+    width: 15%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,lfr));
+    grid-gap: 20px;
+}
+}*/
+.img-gallery img
+{
+    height: 150px;
+    width: 220px;
+    padding: 05px;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: 2s;
+}
+.img-gallery img:hover
+{
+    filter: grayscale(0);
+    transform: scale(1,1);
+     /* transform: scale(0,1) rotate(-25deg);   */
+    border-radius: 20px;
+    box-shadow: 0 59px 150px ;
+}
+.fullimg
+{
+    width: 100%;
+    height: 100vh;
+    background-color: lightslategray;
+    position: fixed;
+    top:0;
+    left:0;
+
+     display: none; /* if me hide we write none or flex it display single image*/
+     align-items: center;
+     justify-content: center;
+     z-index: 100; 
+}
+
+ .fullimg img{
+    width: 90%;
+    max-width: 500px;
+}
+.fullimg span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}  
